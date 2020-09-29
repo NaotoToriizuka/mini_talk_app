@@ -3,8 +3,8 @@
   <%= f.text_field :text %>
   <%= f.submit '送信' %>
 <% end %>
-<div class="messages">
+<div id="messages">
   <% @messages.reverse_each do |message| %>
-    <p><% message.text %></p>
+    <p><%= message.text %></p>
   <% end %>
 </div>
